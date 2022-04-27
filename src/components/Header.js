@@ -43,7 +43,6 @@ function Header() {
             Hi, I am
           </Text>
           <Text
-            fontSize="7xl"
             fontWeight="bold"
             bgGradient="linear(to-r, cyan.400, blue.500, purple.600)"
             bgClip="text"

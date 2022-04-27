@@ -30,7 +30,6 @@ import { useColorMode } from '@chakra-ui/color-mode';
 function TopNav() {
   const { colorMode, toggleColorMode } = useColorMode();
   const isDark = colorMode === 'dark';
-  const [isNotSmallerScreen] = useMediaQuery('(min-width:600px)');
 
   const { isOpen, onOpen, onClose } = useDisclosure();
   const btnRef = React.useRef();
