@@ -41,9 +41,8 @@ function Profile() {
             justify="flex-end"
             onClick={() => window.open('https://www.iregisterkids.com')}
           >
-            <Icon color="black" p="4" as={DiCodeigniter} w="24" h="24" />
             <Text color="black" p="4" fontSize="xl" fontWeight="semibold">
-              Flutter Apps
+              iregister
             </Text>
           </Flex>
           <Flex
@@ -60,9 +59,8 @@ function Profile() {
             justify="flex-end"
             onClick={() => window.open('https://www.incognitobrand.net/')}
           >
-            <Icon color="white" p="4" as={DiAndroid} w="24" h="24" />
             <Text color="white" p="4" fontSize="xl" fontWeight="semibold">
-              Android Apps
+              incognito
             </Text>
           </Flex>
           <Flex
@@ -80,9 +78,8 @@ function Profile() {
 
             onClick={() => window.open('https://halo-web.netlify.app/')}
           >
-            <Icon as={DiWebplatform} p="4" w="24" h="24" color="black" />
             <Text color="black" p="4" fontSize="xl" fontWeight="semibold">
-              Web Apps
+              halo
             </Text>
           </Flex>
         </Flex>
