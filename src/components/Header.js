@@ -11,7 +11,6 @@ import {
   Image,
 } from '@chakra-ui/react';
 import React from 'react';
-// import { specter } from '../../public/asset/specter';
 
 function Header() {
   const { colorMode } = useColorMode;

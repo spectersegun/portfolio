@@ -4,7 +4,6 @@ import {
   Heading,
   IconButton,
   Spacer,
-  useMediaQuery,
   Drawer,
   DrawerOverlay,
   DrawerContent,

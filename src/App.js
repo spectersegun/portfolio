@@ -1,10 +1,9 @@
 import React from 'react';
-import { ChakraProvider, VStack } from '@chakra-ui/react';
+import { VStack } from '@chakra-ui/react';
 
-import { ColorModeSwitcher } from './ColorModeSwitcher';
 import Header from './components/Header';
 import Social from './components/Social';
-import Profile from './components/Profile';
+// import Profile from './components/Profile';
 import TopNav from './components/TopNav';
 
 function App() {
