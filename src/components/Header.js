@@ -39,7 +39,7 @@ function Header() {
           //   fontSize={['sm', 'md', '100%']}
         >
           <Text fontSize="5*1" fontWeight="semibold">
-            Hi, I am
+            Good day, my names are
           </Text>
           <Text
             fontWeight="bold"
@@ -62,7 +62,7 @@ function Header() {
               )
             }
           >
-            Hire Me
+            Experience
           </Button>
         </Box>
         <Image
