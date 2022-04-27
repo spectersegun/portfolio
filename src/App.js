@@ -3,7 +3,7 @@ import { VStack } from '@chakra-ui/react';
 
 import Header from './components/Header';
 import Social from './components/Social';
-// import Profile from './components/Profile';
+import Profile from './components/Profile';
 import TopNav from './components/TopNav';
 
 function App() {
@@ -12,7 +12,7 @@ function App() {
       <TopNav />
       <Header></Header>
       <Social></Social>
-      {/* <Profile></Profile> */}
+      <Profile></Profile>
     </VStack>
   );
 }
