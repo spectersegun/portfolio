@@ -1,14 +1,14 @@
 // import { useColorMode } from '@chakra-ui/color-mode';
 import {
-  Circle,
-  Flex,
-  Stack,
   Box,
   Button,
+  Circle,
+  Flex,
+  Image,
+  Stack,
+  Text,
   useColorMode,
   useMediaQuery,
-  Text,
-  Image,
 } from '@chakra-ui/react';
 import React from 'react';
 
@@ -50,8 +50,8 @@ function Header() {
             Omojolowo Oluwasegun Specter
           </Text>
           <Text color={isDark ? 'gray.200' : 'gray.500'}>
-            GDE - React.js, Next.js, Node. Co-Founder of Syncteams &#38; work @
-            Scorefam &#38; Analytics 🗣
+            GDE - React.js, Next.js, Node, PHP, Laravel, Golang. Co-Founder of Syncteams &#38; work @
+            Flyboku Travels &#38; Tours 🗣
           </Text>
           <Button
             mt={8}
