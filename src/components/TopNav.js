@@ -1,30 +1,30 @@
-import React from 'react';
+import { useColorMode } from '@chakra-ui/color-mode';
 import {
+  Box,
+  Button,
+  Drawer,
+  DrawerBody,
+  DrawerCloseButton,
+  DrawerContent,
+  DrawerFooter,
+  DrawerHeader,
+  DrawerOverlay,
   Flex,
   Heading,
   IconButton,
   Spacer,
-  Drawer,
-  DrawerOverlay,
-  DrawerContent,
-  DrawerCloseButton,
-  Box,
-  DrawerHeader,
-  DrawerBody,
-  DrawerFooter,
-  Button,
   useDisclosure,
 } from '@chakra-ui/react';
+import React from 'react';
 import {
-  FaSun,
-  FaMoon,
-  FaInstagram,
-  FaGithub,
-  FaLinkedin,
-  FaFacebook,
   FaBars,
+  FaFacebook,
+  FaGithub,
+  FaInstagram,
+  FaLinkedin,
+  FaMoon,
+  FaSun,
 } from 'react-icons/fa';
-import { useColorMode } from '@chakra-ui/color-mode';
 
 function TopNav() {
   const { colorMode, toggleColorMode } = useColorMode();
@@ -35,7 +35,7 @@ function TopNav() {
 
   return (
     <>
-      <Flex w="100%">
+      <Flex w="100%" pt={5} px={5}>
         <Heading ml="8" size="md" fontWeight="semibold" color="cyan.400">
           specter OnGod
         </Heading>

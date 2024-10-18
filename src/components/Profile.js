@@ -63,26 +63,6 @@ function Profile() {
               halo
             </Text>
           </Flex>
-          
-          {/* <Flex
-            cursor="pointer"
-            rounded="xl"
-            direction="column"
-            mt={4}
-            ml={isNotSmallerScreen ? 4 : 0}
-            bgImage="url('/image/halo.png')"
-            backgroundSize="cover"
-            h="30vh"
-            w="30vh"
-            justify="flex-end"
-            // _hover={{ w: 'green.400' }}
-
-            onClick={() => window.open('https://www.scorefam.io/')}
-          >
-            <Text color="black" p="4" fontSize="xl" fontWeight="semibold">
-              Scorefam
-            </Text>
-          </Flex> */}
           <Flex
             cursor="pointer"
             rounded="xl"
@@ -102,7 +82,7 @@ function Profile() {
             </Text>
           </Flex>
         </Flex>
-        <Flex direction={isNotSmallerScreen ? 'row' : 'column'} mt={8}>
+        <Flex direction={isNotSmallerScreen ? 'row' : 'column'} mt={5}>
           <Flex
             cursor="pointer"
             bgImage="url('/image/iregisterkids.png')"
@@ -158,7 +138,27 @@ function Profile() {
             </Text>
           </Flex>
         </Flex>
-        
+        <Flex direction={isNotSmallerScreen ? 'row' : 'column'} mt={5}>
+          <Flex
+            cursor="pointer"
+            rounded="xl"
+            direction="column"
+            mt={4}
+            ml={isNotSmallerScreen ? 4 : 0}
+            bgImage="url('/image/scorefam.png')"
+            backgroundSize="cover"
+            h="30vh"
+            w="30vh"
+            justify="flex-end"
+            // _hover={{ w: 'green.400' }}
+
+            onClick={() => window.open('https://www.scorefam.io/')}
+          >
+            <Text color="black" p="4" fontSize="xl" fontWeight="semibold">
+              Scorefam
+            </Text>
+          </Flex>
+        </Flex>   
       </Box>
     </Flex>
   );
