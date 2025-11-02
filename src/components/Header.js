@@ -38,10 +38,7 @@ function Header() {
           alignSelf="flex-start"
           //   fontSize={['sm', 'md', '100%']}
         >
-          {/* <Text fontSize="5*1" fontWeight="semibold">
-            Good day, my names are
-          </Text> */}
-          <Text
+          {/* <Text
             fontSize="3xl"
             fontWeight="semibold"
             display="flex"
@@ -59,7 +56,43 @@ function Header() {
               👋
             </span>
             , my names are
+          </Text> */}
+
+          <Text
+            fontSize={{ base: 'xl', sm: '2xl', md: '3xl' }} // 👈 responsive font sizes
+            fontWeight="semibold"
+            display="flex"
+            flexWrap="wrap"
+            alignItems="center"
+            gap={{ base: 1.5, sm: 2 }} // smaller gap on mobile
+            textAlign={{ base: 'center', md: 'left' }} // centers text on mobile
+            justifyContent={{ base: 'start', md: 'flex-start' }}
+          >
+            Good day
+            <Box
+              as="span"
+              display="inline-block"
+              sx={{
+                '@keyframes wave': {
+                  '0%': { transform: 'rotate(0.0deg)' },
+                  '10%': { transform: 'rotate(14deg)' },
+                  '20%': { transform: 'rotate(-8deg)' },
+                  '30%': { transform: 'rotate(14deg)' },
+                  '40%': { transform: 'rotate(-4deg)' },
+                  '50%': { transform: 'rotate(10deg)' },
+                  '60%': { transform: 'rotate(0.0deg)' },
+                  '100%': { transform: 'rotate(0.0deg)' },
+                },
+              }}
+              animation="wave 1.8s infinite"
+              transformOrigin="70% 70%"
+              mx="1"
+            >
+              👋
+            </Box>
+            , my names are
           </Text>
+
           <Text
             fontWeight="bold"
             bgGradient="linear(to-r, cyan.400, blue.500, purple.600)"
