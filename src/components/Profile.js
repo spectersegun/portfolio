@@ -1,7 +1,6 @@
 /* eslint-disable no-template-curly-in-string */
-import { Box, Flex, Heading, Text } from '@chakra-ui/layout';
-import { useMediaQuery } from '@chakra-ui/media-query';
-import React from 'react';
+// import { Box, Flex, Heading, Text } from '@chakra-ui/layout';
+import { Box, Flex, Heading, Text, useMediaQuery } from '@chakra-ui/react';
 
 function Profile() {
   const [isNotSmallerScreen] = useMediaQuery('(min-width:600px)');
@@ -25,6 +24,25 @@ function Profile() {
           Product Designer and Developer, specialised in mobile app development.
         </Text>
         <Flex direction={isNotSmallerScreen ? 'row' : 'column'} mt={8}>
+          <Flex
+            cursor="pointer"
+            rounded="xl"
+            direction="column"
+            mt={4}
+            ml={isNotSmallerScreen ? 4 : 0}
+            bgImage="url('/image/marketx.png')"
+            backgroundSize="cover"
+            h="30vh"
+            w="30vh"
+            justify="flex-end"
+            // _hover={{ w: 'green.400' }}
+
+            onClick={() => window.open('https://marketxpro.com/')}
+          >
+            <Text color="white" p="4" fontSize="xl" fontWeight="semibold">
+              Marketx Pro
+            </Text>
+          </Flex>
           <Flex
             cursor="pointer"
             rounded="xl"
@@ -63,6 +81,26 @@ function Profile() {
               halo
             </Text>
           </Flex>
+        </Flex>
+        <Flex direction={isNotSmallerScreen ? 'row' : 'column'} mt={5}>
+          <Flex
+            cursor="pointer"
+            backgroundSize="cover"
+            bgImage="url('/image/heldatech.png')"
+            class="syncteams"
+            rounded="xl"
+            direction="column"
+            mt={4}
+            ml={isNotSmallerScreen ? 4 : 0}
+            h="30vh"
+            w="30vh"
+            justify="flex-end"
+            onClick={() => window.open('https://www.heldatech.com/')}
+          >
+            <Text color="white" p="4" fontSize="xl" fontWeight="semibold">
+              Helda Tech
+            </Text>
+          </Flex>
           <Flex
             cursor="pointer"
             rounded="xl"
@@ -81,43 +119,7 @@ function Profile() {
               Swiftsell
             </Text>
           </Flex>
-        </Flex>
-        <Flex direction={isNotSmallerScreen ? 'row' : 'column'} mt={5}>
-          <Flex
-            cursor="pointer"
-            bgImage="url('/image/iregisterkids.png')"
-            rounded="xl"
-            direction="column"
-            mt={4}
-            ml={isNotSmallerScreen ? 4 : 0}
-            backgroundSize="cover"
-            h="30vh"
-            w="30vh"
-            justify="flex-end"
-            onClick={() => window.open('https://www.iregisterkids.com')}
-          >
-            <Text color="white" p="4" fontSize="xl" fontWeight="semibold">
-              iregister
-            </Text>
-          </Flex>
-          <Flex
-            cursor="pointer"
-            backgroundSize="cover"
-            bgImage="url('/image/incognito.png')"
-            class="syncteams"
-            rounded="xl"
-            direction="column"
-            mt={4}
-            ml={isNotSmallerScreen ? 4 : 0}
-            h="30vh"
-            w="30vh"
-            justify="flex-end"
-            onClick={() => window.open('https://www.incognitobrand.net/')}
-          >
-            <Text color="white" p="4" fontSize="xl" fontWeight="semibold">
-              incognito
-            </Text>
-          </Flex>
+
           <Flex
             cursor="pointer"
             rounded="xl"
@@ -158,7 +160,43 @@ function Profile() {
               Scorefam
             </Text>
           </Flex>
-        </Flex>   
+          <Flex
+            cursor="pointer"
+            backgroundSize="cover"
+            bgImage="url('/image/incognito.png')"
+            class="syncteams"
+            rounded="xl"
+            direction="column"
+            mt={4}
+            ml={isNotSmallerScreen ? 4 : 0}
+            h="30vh"
+            w="30vh"
+            justify="flex-end"
+            onClick={() => window.open('https://www.incognitobrand.net/')}
+          >
+            <Text color="white" p="4" fontSize="xl" fontWeight="semibold">
+              incognito
+            </Text>
+          </Flex>
+
+          <Flex
+            cursor="pointer"
+            bgImage="url('/image/iregisterkids.png')"
+            rounded="xl"
+            direction="column"
+            mt={4}
+            ml={isNotSmallerScreen ? 4 : 0}
+            backgroundSize="cover"
+            h="30vh"
+            w="30vh"
+            justify="flex-end"
+            onClick={() => window.open('https://www.iregisterkids.com')}
+          >
+            <Text color="white" p="4" fontSize="xl" fontWeight="semibold">
+              iregister
+            </Text>
+          </Flex>
+        </Flex>
       </Box>
     </Flex>
   );

@@ -38,8 +38,27 @@ function Header() {
           alignSelf="flex-start"
           //   fontSize={['sm', 'md', '100%']}
         >
-          <Text fontSize="5*1" fontWeight="semibold">
+          {/* <Text fontSize="5*1" fontWeight="semibold">
             Good day, my names are
+          </Text> */}
+          <Text
+            fontSize="3xl"
+            fontWeight="semibold"
+            display="flex"
+            alignItems="center"
+            gap={2}
+          >
+            Good day
+            <span
+              style={{
+                display: 'inline-block',
+                animation: 'wave 1.8s infinite',
+                transformOrigin: '70% 70%',
+              }}
+            >
+              👋
+            </span>
+            , my names are
           </Text>
           <Text
             fontWeight="bold"
@@ -50,8 +69,8 @@ function Header() {
             Omojolowo Oluwasegun Specter
           </Text>
           <Text color={isDark ? 'gray.200' : 'gray.500'}>
-            GDE - React.js, Next.js, Node, PHP, Laravel, Golang. Co-Founder of Syncteams &#38; work @
-            Flyboku Travels &#38; Tours 🗣
+            GDE - React.js, Next.js, Python, Node, PHP, Laravel, Golang.
+            Co-Founder of Syncteams &#38; work @ Flyboku Travels &#38; Tours 🗣
           </Text>
           <Button
             mt={8}
